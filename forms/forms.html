@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Формы
+  </title>
+</head>
+<body>
+  <h1>Формы</h1>
+  <p></p>
+  <form action="">
+    Имя<input type="text" placeholder="введите имя" required autofocus tabindex="1">
+    Пароль<input type="password" placeholder="введите пароль">
+    <hr>
+    <input type="submit" value="Отправить">
+    <hr>
+    <h3>Ваши интересы</h3>
+    Чтение<input type="checkbox" checked>
+    <label for="sport">Спорт</label><input type="checkbox" id="sport">
+    Барабаны<input type="checkbox" checked>
+    <hr>
+    <h3>Способ оплаты</h3>
+    Visa <input type="radio" name="payment">
+    Мир <input type="radio" name="payment">
+    <hr>
+    <select name="" id="">
+      <option value="">Выберите страну</option>
+      <option value="">Китай</option>
+      <optgroup label="Группа стран">
+        <option value="" selected>Япония</option>
+        <option value="" disabled>Англия</option>
+        <option value="">Корея</option>
+      </optgroup>
+    </select>
+    <hr>
+    <h3>Иностранные языки</h3>
+    <select name="" id="" multiple>
+      <option value="">Английский</option>
+      <option value="">Испанский</option>
+      <option value="">Франзуский</option>
+      <option value="">Китайский</option>
+    </select>
+  </form>
+  <hr>
+  <h3>Комментарии</h3>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <hr>
+  <form action="">
+    <input type="file">
+    <hr>
+    <input type="range" min="0" max="100" step="10">
+    <hr>
+    <input type="number" min="0" max="72" step="8">
+    <hr>
+    <input type="color">
+    <hr>
+    <input type="date">
+  </form>
+  <hr>
+  <h3>Отправка формы на сервер</h3>
+  <form action="" method="get" enctype=""> 
+    Имя<input type="text" name="first-name"> 
+    Фамилия<input type="text" name="last-name">
+    <hr>
+    <input type="submit" value="Нажать для отправки данных">
+    <button type="submit">Отправить</button>
+    <input type="reset" value="Очистить все">
+  </form>
+  <p></p>
+  <a href="../index.html">Назад</a>
+</body>
+</html>
